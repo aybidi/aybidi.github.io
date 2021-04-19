@@ -45970,7 +45970,7 @@ G.Bh.prototype={
 K:function(a,b){var s=null,r=b.a_(t.w).f.a,q=X.a24(C.aS,C.ke,new L.ji("assets/images/top_background.png",s,s)),p=r.a,o=t.fQ,n=T.a_g(H.b([U.ZL("assets/images/verified_2.png",s,s,20),T.hy(s,s,p*0.005),L.d3("product design + data science",s,A.c1(s,s,C.i,s,s,s,s,s,s,s,s,16,s,s,s,s,!0,s,s,s,s,s,s),s)],o),C.b9,C.cP,C.hq)
 return M.eg(C.mZ,M.eg(s,T.li(H.b([n,L.d3("Abdullah Mobeen",s,A.c1(s,s,C.i,s,s,s,s,s,s,s,s,p>600?88:60,s,C.aV,s,s,!0,s,s,s,s,s,s),s),L.d3("34,981 monthly visitors",s,A.c1(s,s,C.i,s,s,s,s,s,s,s,s,16,s,s,s,s,!0,s,s,s,s,s,s),s),T.hy(s,r.b*0.05,s)],o),C.fX,C.lr),C.v,s,s,s,s,s,new V.aM(30,0,30,0),s,s,1200),C.v,s,new S.ar(0,1/0,170,370),new S.dp(s,q,s,s,s,s,C.Z),s,s,s,s,s,1/0)}}
 T.Bi.prototype={
-K:function(a,b){var s=null,r=b.a_(t.w).f,q=X.a24(C.mY,C.ke,new L.ji("assets/images/profile_picture_spotify_2.jpeg",s,s))
+K:function(a,b){var s=null,r=b.a_(t.w).f,q=X.a24(C.mY,C.ke,new L.ji("assets/images/profile_piccture_spotify_3.jpeg",s,s))
 return M.eg(C.mZ,M.eg(s,T.li(H.b([L.d3("Abdullah Mobeen",s,A.c1(s,s,C.i,s,s,s,s,s,s,s,s,40,s,C.aV,s,s,!0,s,s,s,s,s,s),C.mt),L.d3("machine learning + design",s,A.c1(s,s,C.i,s,s,s,s,s,s,s,s,16,s,s,s,s,!0,s,s,s,s,s,s),s),T.hy(s,r.a.b*0.05,s)],t.fQ),C.b9,C.lr),C.v,s,s,s,s,s,new V.aM(30,0,30,0),s,s,1200),C.v,s,new S.ar(0,1/0,170,370),new S.dp(s,q,s,s,s,s,C.Z),s,s,s,s,s,1/0)}}
 G.As.prototype={
 K:function(a,b){var s=null,r=4289967027
