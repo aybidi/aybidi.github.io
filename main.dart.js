@@ -46536,7 +46536,7 @@ V.kt.prototype={
 I:function(a,b){var s=null
 return M.cG(s,L.b_(this.c,s,s,A.aP(s,s,C.h,s,s,s,s,s,s,s,s,24,s,C.T,s,s,!0,s,s,s,s,s,s),s),C.o,this.e,new S.ai(0,1/0,50,90),s,s,s,s,new V.ar(25,25,25,25),s,s,1/0)}}
 F.zF.prototype={
-I:function(a,b){return new S.q7(new V.pF(null),"Flutter Demo",X.a4U(null,"Proxima",C.lB),!1,null)}}
+I:function(a,b){return new S.q7(new V.pF(null),"Abdullah Mobeen",X.a4U(null,"Proxima",C.lB),!1,null)}}
 E.xC.prototype={
 gcQ:function(a){return this.a},
 gDt:function(a){return this.b},
