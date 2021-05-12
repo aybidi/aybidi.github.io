@@ -53268,8 +53268,8 @@ I:function(a,b){var s,r,q,p=null,o="assets/images/app_dev.jpeg",n="Software Engi
 f=T.jH(H.b([new T.ck(new V.ag(0,0,25,0),g,p),new D.Ae(new V.LK(b),p,A.yO(p,p,new V.eX(C.aG,t.hE),p,p,p,p,p,p,p,p,p,new V.eX(new Y.cb(C.ad,1,C.W),t.y1),p,p,p),C.p,p,!1,new T.ck(new V.ag(8,8,8,8),f,p),p)],e),C.a3,C.aC,C.Q)
 g=L.aB("Skills",p,p,p,A.av(p,p,C.i,p,p,p,p,p,p,p,p,24,p,C.P,p,p,!0,p,p,p,p,p,p),p,p)
 s=this.c.a>600
-r=s?new K.pF(o,n,"+6 yrs","2",p):new E.pG(o,n,"+6 yrs",p)
-q=s?new K.pF(m,l,"+4 yrs","1",p):new E.pG(m,l,"+4 yrs",p)
+r=s?new K.pF(o,n,"+6 yrs","1",p):new E.pG(o,n,"+6 yrs",p)
+q=s?new K.pF(m,l,"+4 yrs","2",p):new E.pG(m,l,"+4 yrs",p)
 s=s?new K.pF(k,j,"+2 yrs","3",p):new E.pG(k,j,"+2 yrs",p)
 return M.cc(p,T.cN(T.dZ(H.b([new T.ck(new V.ag(0,2,0,0),f,p),new T.ck(new V.ag(0,50,0,10),g,p),r,q,s],e),C.bt,C.aC,C.Q),p,p),C.p,p,new S.ar(0,1/0,0,450),new S.cA(p,p,p,p,p,new T.eL(C.bW,C.ct,C.bV,h,i,p),C.S),p,p,p,new V.ag(25,25,0,10),p,p,1/0)}}
 V.LK.prototype={
