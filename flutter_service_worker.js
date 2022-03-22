@@ -3,10 +3,10 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "version.json": "fc100f8fc1e9fb53244c6ab4ea159cb4",
-"index.html": "4879a08b33456a161f71e1fef8a64715",
-"/": "4879a08b33456a161f71e1fef8a64715",
-"main.dart.js": "fa5f4acebe4ca066ec4a09b88c821c25",
+  "version.json": "3b1142d8488bde8ad45a47af6356002c",
+"index.html": "3e96eec59c6b0418302d6e646e0c40b3",
+"/": "3e96eec59c6b0418302d6e646e0c40b3",
+"main.dart.js": "bb684072e4d89884d973f5330f253155",
 "favicon.png": "5adb338a4566754a2b4331d0b882e466",
 "icons/favicon-16x16.png": "5adb338a4566754a2b4331d0b882e466",
 "icons/favicon.ico": "1eb71c6017221f04144c75cbdffb9a5b",
@@ -36,14 +36,14 @@ const RESOURCES = {
 "icons/favicon-32x32.png": "d5d6648185c2c073a00c7322546fd2fa",
 "icons/ms-icon-70x70.png": "86aa3c3456265aac0269ec3903a4b37d",
 "manifest.json": "525f0ef675a4967750f6268c1dff8199",
-"assets/AssetManifest.json": "fefb92fe95cd430d241488ade1a8c1e1",
-"assets/NOTICES": "f2cca21f9792fb5fa62142b243e56342",
+"assets/AssetManifest.json": "98f55231d84fc139e42dade204847838",
+"assets/NOTICES": "83ca3a72188237a94f9632611f754431",
 "assets/FontManifest.json": "6b7ce1ef28a3ef62d63e61a861d049da",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
 "assets/packages/font_awesome_flutter/lib/fonts/fa-solid-900.ttf": "dffd9504fcb1894620fa41c700172994",
 "assets/packages/font_awesome_flutter/lib/fonts/fa-regular-400.ttf": "4b6a9b7c20913279a3ad3dd9c96e155b",
 "assets/packages/font_awesome_flutter/lib/fonts/fa-brands-400.ttf": "00bb2b684be61e89d1bc7d75dee30b58",
-"assets/fonts/MaterialIcons-Regular.otf": "1288c9e28052e028aba623321f7826ac",
+"assets/fonts/MaterialIcons-Regular.otf": "7e7a6cccddf6d7b20012a548461d5d81",
 "assets/fonts/Proxima-Nova-Reg.ttf": "99e6f15dece8b6cbc0edee1da31e0365",
 "assets/assets/images/nyu_stern_1.jpeg": "b626c8596e8ed9291e948962d8d79ca5",
 "assets/assets/images/profile_2_duo_1.jpeg": "bf2e4c03574156a8b4cb03ab8529c8b9",
@@ -53,6 +53,7 @@ const RESOURCES = {
 "assets/assets/images/ML.jpeg": "3ccbf5c91b69faa8509725992974627f",
 "assets/assets/images/pakvax_project.png": "21bb388857df76ddb88408a406f5f0bf",
 "assets/assets/images/dl_project.jpeg": "cccc929f500d44a6c8e34bc7bcf31f91",
+"assets/assets/images/spotify.jpeg": "44f3374bd60d5e6de358912a48261352",
 "assets/assets/images/savaal_project.png": "ff59951b017c4c952a4ae3dd65d61301",
 "assets/assets/images/pm.jpeg": "27a2c7fc095747cd7ccd4d2eea30da49",
 "assets/assets/images/edtech_2.png": "164d7b207cd2e88564c745050b99ef26",
@@ -78,10 +79,15 @@ const RESOURCES = {
 "assets/assets/images/female_education.jpg": "89b186dfb794c4cd3f068f5214432fdc",
 "assets/assets/images/edtech.png": "f9cf1098b31e7e3542c6e1ebbac1127a",
 "assets/assets/images/ML.png": "995b074193b456cfc6dbe36fac93a8ff",
+"assets/assets/images/palitronica.jpeg": "3dd41ace8c55980ba6baee6ef76ae896",
 "assets/assets/images/edtech2_project.png": "dd71f8a0e93bf597e8f18ee760f789bf",
 "assets/assets/images/play_button.png": "cc7727b03dadcf0e11c4798eab985554",
 "assets/assets/images/vulnerable_employment.jpg": "13def7ee276b80d1457ab7f2bd33fb05",
-"assets/assets/images/ilmademia_project.png": "e1a3e90931520b864fc83f17c60f4462"
+"assets/assets/images/ilmademia_project.png": "e1a3e90931520b864fc83f17c60f4462",
+"canvaskit/canvaskit.js": "c2b4e5f3d7a3d82aed024e7249a78487",
+"canvaskit/profiling/canvaskit.js": "ae2949af4efc61d28a4a80fffa1db900",
+"canvaskit/profiling/canvaskit.wasm": "95e736ab31147d1b2c7b25f11d4c32cd",
+"canvaskit/canvaskit.wasm": "4b83d89d9fecbea8ca46f2f760c5a9ba"
 };
 
 // The application shell files that are downloaded before a service worker can
@@ -99,7 +105,7 @@ self.addEventListener("install", (event) => {
   return event.waitUntil(
     caches.open(TEMP).then((cache) => {
       return cache.addAll(
-        CORE.map((value) => new Request(value + '?revision=' + RESOURCES[value], {'cache': 'reload'})));
+        CORE.map((value) => new Request(value, {'cache': 'reload'})));
     })
   );
 });
