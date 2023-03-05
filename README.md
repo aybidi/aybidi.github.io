@@ -1,2 +1,0 @@
-# aybidi.github.io
-portfolio
