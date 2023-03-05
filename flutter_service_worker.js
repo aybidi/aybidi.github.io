@@ -4,9 +4,10 @@ const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
   "version.json": "3b1142d8488bde8ad45a47af6356002c",
-"index.html": "3e96eec59c6b0418302d6e646e0c40b3",
-"/": "3e96eec59c6b0418302d6e646e0c40b3",
-"main.dart.js": "bb684072e4d89884d973f5330f253155",
+"index.html": "ce0a0f895e03be3d71b84eb94eed49e8",
+"/": "ce0a0f895e03be3d71b84eb94eed49e8",
+"main.dart.js": "a41a65005488ab976cbd1875f89167c9",
+"flutter.js": "a85fcf6324d3c4d3ae3be1ae4931e9c5",
 "favicon.png": "5adb338a4566754a2b4331d0b882e466",
 "icons/favicon-16x16.png": "5adb338a4566754a2b4331d0b882e466",
 "icons/favicon.ico": "1eb71c6017221f04144c75cbdffb9a5b",
@@ -37,13 +38,13 @@ const RESOURCES = {
 "icons/ms-icon-70x70.png": "86aa3c3456265aac0269ec3903a4b37d",
 "manifest.json": "525f0ef675a4967750f6268c1dff8199",
 "assets/AssetManifest.json": "98f55231d84fc139e42dade204847838",
-"assets/NOTICES": "83ca3a72188237a94f9632611f754431",
+"assets/NOTICES": "687b7eaaa7f3ac01bb5127b952c46246",
 "assets/FontManifest.json": "6b7ce1ef28a3ef62d63e61a861d049da",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
-"assets/packages/font_awesome_flutter/lib/fonts/fa-solid-900.ttf": "dffd9504fcb1894620fa41c700172994",
-"assets/packages/font_awesome_flutter/lib/fonts/fa-regular-400.ttf": "4b6a9b7c20913279a3ad3dd9c96e155b",
-"assets/packages/font_awesome_flutter/lib/fonts/fa-brands-400.ttf": "00bb2b684be61e89d1bc7d75dee30b58",
-"assets/fonts/MaterialIcons-Regular.otf": "7e7a6cccddf6d7b20012a548461d5d81",
+"assets/packages/font_awesome_flutter/lib/fonts/fa-solid-900.ttf": "9cda082bd7cc5642096b56fa8db15b45",
+"assets/packages/font_awesome_flutter/lib/fonts/fa-regular-400.ttf": "0a94bab8e306520dc6ae14c2573972ad",
+"assets/packages/font_awesome_flutter/lib/fonts/fa-brands-400.ttf": "b00363533ebe0bfdb95f3694d7647f6d",
+"assets/fonts/MaterialIcons-Regular.otf": "e7069dfd19b331be16bed984668fe080",
 "assets/fonts/Proxima-Nova-Reg.ttf": "99e6f15dece8b6cbc0edee1da31e0365",
 "assets/assets/images/nyu_stern_1.jpeg": "b626c8596e8ed9291e948962d8d79ca5",
 "assets/assets/images/profile_2_duo_1.jpeg": "bf2e4c03574156a8b4cb03ab8529c8b9",
@@ -84,19 +85,17 @@ const RESOURCES = {
 "assets/assets/images/play_button.png": "cc7727b03dadcf0e11c4798eab985554",
 "assets/assets/images/vulnerable_employment.jpg": "13def7ee276b80d1457ab7f2bd33fb05",
 "assets/assets/images/ilmademia_project.png": "e1a3e90931520b864fc83f17c60f4462",
-"canvaskit/canvaskit.js": "c2b4e5f3d7a3d82aed024e7249a78487",
-"canvaskit/profiling/canvaskit.js": "ae2949af4efc61d28a4a80fffa1db900",
-"canvaskit/profiling/canvaskit.wasm": "95e736ab31147d1b2c7b25f11d4c32cd",
-"canvaskit/canvaskit.wasm": "4b83d89d9fecbea8ca46f2f760c5a9ba"
+"canvaskit/canvaskit.js": "97937cb4c2c2073c968525a3e08c86a3",
+"canvaskit/profiling/canvaskit.js": "c21852696bc1cc82e8894d851c01921a",
+"canvaskit/profiling/canvaskit.wasm": "371bc4e204443b0d5e774d64a046eb99",
+"canvaskit/canvaskit.wasm": "3de12d898ec208a5f31362cc00f09b9e"
 };
 
 // The application shell files that are downloaded before a service worker can
 // start.
 const CORE = [
-  "/",
-"main.dart.js",
+  "main.dart.js",
 "index.html",
-"assets/NOTICES",
 "assets/AssetManifest.json",
 "assets/FontManifest.json"];
 // During install, the TEMP cache is populated with the application shell files.
@@ -195,9 +194,11 @@ self.addEventListener("fetch", (event) => {
     .then((cache) =>  {
       return cache.match(event.request).then((response) => {
         // Either respond with the cached resource, or perform a fetch and
-        // lazily populate the cache.
+        // lazily populate the cache only if the resource was successfully fetched.
         return response || fetch(event.request).then((response) => {
-          cache.put(event.request, response.clone());
+          if (response && Boolean(response.ok)) {
+            cache.put(event.request, response.clone());
+          }
           return response;
         });
       })
