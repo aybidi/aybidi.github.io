@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Abdullah Mobeen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">About Me</a></li>
+                <li><a href="list-100.html">List 100</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="about">
+            <div class="about-content">
+                <h3><span id="name"></span><span class="cursor">|</span></h3>
+                <p>machine learning engineer @ spotify &lt;&gt; born and raised in 🇵🇰 &lt;&gt; living in 🗽</p>
+            </div>
+        </section>
+    </main>
+    <!-- ... -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var name = "Abdullah Mobeen";
+            var nameElement = document.getElementById("name");
+            var i = 0;
+
+            function typeLetter() {
+                if (i < name.length) {
+                    nameElement.innerHTML += name.charAt(i);
+                    i++;
+                    setTimeout(typeLetter, 150);
+                }
+            }
+
+            typeLetter();
+        });
+    </script>
+    <!-- ... -->
+
+</body>
+
+</html>
