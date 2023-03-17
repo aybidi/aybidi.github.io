@@ -120,3 +120,18 @@ h2 {
         opacity: 0;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .list-100-content h3 {
+        font-size: 1.3rem;
+    }
+
+    .list-100-content li {
+        font-size: 0.8rem;
+    }
+
+    .list-100-content {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
