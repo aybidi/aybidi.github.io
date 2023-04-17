@@ -6,12 +6,12 @@
 
 body {
     font-family: 'Source Code Pro', monospace;
-    background-color: #FFEBD9;
-    color: #000000;
+    background-color: #121212;
+    color: #E0E0E0;
 }
 
 header {
-    background-color: #FFEBD9;
+    background-color: #121212;
     padding: 1rem;
 }
 
@@ -19,8 +19,8 @@ nav ul {
     display: flex;
     justify-content: flex-end; /* Change this from space-around to flex-end */
     list-style-type: none;
-    background-color: #FFEBD9;
-    color: #000000;
+    background-color: #121212;
+    color: #E0E0E0;
 }
 
 nav li {
@@ -28,12 +28,12 @@ nav li {
 }
 
 nav a {
-    color: #000000;
-    text-decoration: none;
+    color: #E0E0E0;
 }
 
 nav a:hover {
     text-decoration: underline;
+    background-color: #BB86FC;
 }
 
 main {
