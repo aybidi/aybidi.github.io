@@ -108,3 +108,28 @@ h2 {
         opacity: 0;
     }
 }
+
+footer {
+    padding: 2rem;
+    text-align: center;
+    background-color: #121212;
+}
+
+.contact-info {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-info li {
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+.contact-info a {
+    color: #E0E0E0;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
