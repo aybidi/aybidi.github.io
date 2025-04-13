@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - Abdullah Mobeen</title>
+    <title>Abdullah Mobeen | Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -15,54 +15,56 @@
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">About Me</a></li>
-                <li><a href="list-100.html">List 100</a></li>
+                <li><a href="index.html">Home</a></li>
+                <!-- <li><a href="resume.html">Resume</a></li> -->
+                <li><a href="blog.html">Blog</a></li>
+                <!-- <li><a href="list-100.html">List 100</a></li> -->
             </ul>
         </nav>
     </header>
     <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1><span id="name"></span><span class="cursor">|</span></h1>
+                <p class="subtitle">Dabbling in ML and GenAI Infra</p>
+            </div>
+        </section>
+        
         <section class="about">
-            <div class="about-content">
-                <h3><span id="name"></span><span class="cursor">|</span></h3>
-                <p>machine learning engineer @ spotify &lt;&gt; born and raised in 🇵🇰 &lt;&gt; working in 🗽</p>
+            <div class="container">
+                <h2>About Me</h2>
+                <p>Hello! I'm Abdullah. I currently do ML infra work at Spotify + spend time building AI agents for productivty</p>
+                <p>This is my digital space where I share my thoughts, projects, and experiences.</p>
             </div>
         </section>
     </main>
-    <!-- ... -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            var name = "Abdullah Mobeen";
-            var nameElement = document.getElementById("name");
-            var i = 0;
-
-            function typeLetter() {
-                if (i < name.length) {
-                    nameElement.innerHTML += name.charAt(i);
-                    i++;
-                    setTimeout(typeLetter, 150);
-                }
-            }
-
-            typeLetter();
-        });
-    </script>
-    <!-- ... -->
     <footer>
-        <ul class="contact-info">
-            <li>
-                <a href="https://www.linkedin.com/in/abdullah-mobeen/" target="_blank" rel="noopener noreferrer">
-                    <span role="img" aria-label="LinkedIn">🔗</span>
-                    LinkedIn
-                </a>
-            </li>
-            <li>
-                <a href="mailto:a.mobeenn@gmail.com">
-                    <span role="img" aria-label="Email">📧</span>
-                    Email
-                </a>
-            </li>
-        </ul>
+        <div class="container">
+            <ul class="contact-info">
+                <li>
+                    <a href="https://www.linkedin.com/in/abdullah-mobeen/" target="_blank" rel="noopener noreferrer">
+                        <span role="img" aria-label="LinkedIn">🔗</span>
+                        LinkedIn
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:a.mobeenn@gmail.com">
+                        <span role="img" aria-label="Email">📧</span>
+                        Email
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/aybidi" target="_blank" rel="noopener noreferrer">
+                        <span role="img" aria-label="GitHub">💻</span>
+                        GitHub
+                    </a>
+                </li>
+            </ul>
+            <p class="copyright">&copy; <span id="current-year"></span> Abdullah Mobeen. All rights reserved.</p>
+        </div>
     </footer>
+
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>

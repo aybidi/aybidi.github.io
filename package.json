@@ -1,0 +1,24 @@
+{
+  "name": "aybidi.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "browser-sync start --server --files \"*.html, css/*.css, js/*.js\" --browser \"google chrome\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aybidi/aybidi.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aybidi/aybidi.github.io/issues"
+  },
+  "homepage": "https://github.com/aybidi/aybidi.github.io#readme",
+  "description": "",
+  "devDependencies": {
+    "browser-sync": "^3.0.4"
+  }
+}

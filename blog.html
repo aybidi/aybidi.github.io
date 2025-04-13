@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Abdullah Mobeen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <!-- <li><a href="resume.html">Resume</a></li> -->
+                <li><a href="blog.html">Blog</a></li>
+                <!-- <li><a href="list-100.html">List 100</a></li> -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="blog-header">
+            <div class="container">
+                <h1>Blog</h1>
+                <p>Thoughts on AI, tech, and personal growth</p>
+            </div>
+        </section>
+
+        <section class="blog-filters">
+            <div class="container">
+                <h3>Filter by tag:</h3>
+                <div class="tag-container">
+                    <button class="tag-filter active" data-tag="all">All</button>
+                    <button class="tag-filter" data-tag="ai">Machine Learning</button>
+                    <button class="tag-filter" data-tag="tech">Tech</button>
+                    <button class="tag-filter" data-tag="career">Career</button>
+                    <button class="tag-filter" data-tag="personal">Personal</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog-posts">
+            <div class="container">
+                <!-- Blog post example 1 -->
+                <article class="blog-post" data-tags="machine-learning tech">
+                    <h2><a href="blog/test-blog.html">My Test Blog</a></h2>
+                    <div class="post-meta">
+                        <time datetime="2023-10-15">October 15, 2023</time>
+                        <div class="post-tags">
+                            <span class="tag">machine-learning</span>
+                            <span class="tag">tech</span>
+                        </div>
+                    </div>
+                    <p class="post-excerpt">Test blog.</p>
+                    <a href="blog/test-blog.html" class="read-more">Read more</a>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <ul class="contact-info">
+                <li>
+                    <a href="https://www.linkedin.com/in/abdullah-mobeen/" target="_blank" rel="noopener noreferrer">
+                        <span role="img" aria-label="LinkedIn">🔗</span>
+                        LinkedIn
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:a.mobeenn@gmail.com">
+                        <span role="img" aria-label="Email">📧</span>
+                        Email
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/aybidi" target="_blank" rel="noopener noreferrer">
+                        <span role="img" aria-label="GitHub">💻</span>
+                        GitHub
+                    </a>
+                </li>
+            </ul>
+            <p class="copyright">&copy; <span id="current-year"></span> Abdullah Mobeen. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+
+</html> 
